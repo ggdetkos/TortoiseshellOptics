@@ -1,0 +1,90 @@
+/* Base Css for Tortoiseshell Optics project for Codecademy */
+div,nav,ul { border: thin dashed yellow; }
+
+html,
+body {
+  color: #000000;
+  background-color: #FFFFFF;
+  font: 18px/1.4 Helvetica,Arial,sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;   
+}
+
+.pageContainer {
+  max-width: 960px;
+  margin: 0 auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+header {
+  background-image: url("../images/glasses-bg.png");
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#logoAndNav {
+  color: #FFFFFF;
+  background-color: cadetblue;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#logoAndNav img {
+  width: auto;
+  height: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+nav {
+  margin: 1rem auto;
+}
+
+#navList {
+  display: flex;
+  flex-direction: row;
+}
+
+#navList li {
+  margin-right: 2rem;
+}
+
+#navMobile {
+  display: none;
+}
+
+#logoAndNav a:link,
+#logoAndNav a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#logoAndNav a:hover,
+#logoAndNav a:active {
+  color: #ECDC81;
+  text-decoration: none;
+}
+
+/* Adjustments for tablet screens */
+@media only screen and (max-width: 1024px) {
+
+}
+
+
+
+/* Adjustments for mobile screens */
+@media only screen and (max-width: 480px) {
+  #navList {
+    display: none;
+  }
+  #navMobile {
+    display: block;
+  }
+}

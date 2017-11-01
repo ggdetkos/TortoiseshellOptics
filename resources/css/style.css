@@ -12,6 +12,11 @@ body {
   flex-direction: column;   
 }
 
+h4 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
 a:link,
 a:visited {
   color: #FFFFFF;
@@ -149,7 +154,7 @@ nav {
   margin-right: 15%;
 }
 
-#philAppts h3 {
+#philAppts h4 {
   color: #FFFFFF;
   background-color: #5F9EA0;
   font-weight: bold;
@@ -158,32 +163,65 @@ nav {
   height: auto;
   padding: 0.5em 0 0.5em 1.25em;
   margin-bottom: 1rem;
-  
 }
 
 /* Page Footer */
-footer.pageContainer {
+footer {
   background-color: #F0FFFF;
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 4rem;
+}
+
+footer.pageContainer {
   margin-top: 5rem;
+}
+
+footer #logoImage {
+  padding: 4rem 1rem 4rem 4rem;
 }
 
 /* Adjustments for tablet screens */
 @media only screen and (max-width: 1024px) {
-
+  header {
+    height: 22rem;
+  }
+  #logoAndNav {
+     margin-top: 0;
+  }
+  div#logoAndNav.pageContainer {
+    max-width: 100%;
+  }
+  #taglineContainer h1 {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+  #philAppts {
+    padding: 0 2rem;
+  }
+  footer.pageContainer {
+    max-width: 100%;
+  }
 }
-
-
 
 /* Adjustments for mobile screens */
 @media only screen and (max-width: 480px) {
+  header {
+    height: 17rem;
+  }
   #navList {
     display: none;
   }
   #navMobile {
     display: block;
+  }
+  #taglineContainer h1 {
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    padding: 1rem 4rem;
+    margin-top: 9rem;
   }
 }

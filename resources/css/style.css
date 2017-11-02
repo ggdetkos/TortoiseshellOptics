@@ -183,7 +183,7 @@ footer img.logoImage {
   padding: 4rem 1rem 4rem 4rem;
 }
 
-/* Adjustments for tablet screens */
+/* Adjustments for tablet screens in landscape */
 @media only screen and (max-width: 1024px) {
   .pageContainer {
     max-width: 100%;
@@ -205,7 +205,21 @@ footer img.logoImage {
   }
 }
 
-/* Adjustments for mobile screens */
+/* Adjustments for tablet screens in portrait */
+@media only screen and (max-width: 768px) {
+  header {
+    background-position: 30%;
+  }
+  #taglineContainer h1 {
+    font-size: 1.2rem;
+    padding: 0.75rem 2.5rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+}
+
+
+/* Adjustments for mobile screens in portrait */
 @media only screen and (max-width: 480px) {
   header {
     background-position: 20%;
